@@ -18,9 +18,9 @@ This is my general cheatsheet for setup of an instance on Tendermint Blockchains
 
 From your local Machine
 Generate private & public keys (public key has ".pub" extension)
-When prompted, name it something other than "id_rsa" (so you don;t overwrite existing keys)
+When prompted, name it something other than "id_rsa" (so you don't overwrite existing keys)
 ```
-ssh-keygen -t rsa
+ssh-keygen -t rsa -b 4096 -f ~/.ssh/specialname_rsa
 ```
 Lock down private key
 ```
@@ -109,7 +109,7 @@ Install the Node Exporter on each node as per the Centos guide above.
 <br /><br />
 
 ### Band Protocol Specific Stuff
-Now Linux is setup move to install GO + BANND + YODA Using the latest Guide
+Now Linux is setup we can move on to install ing GO, BAND and YODA using the latest guides.
 
 Current Laozi-Testnet-2
 https://hackmd.io/xrOA-9FSRM6kxCMX9uyv9g# 
