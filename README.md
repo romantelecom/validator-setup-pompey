@@ -189,23 +189,23 @@ Config.toml settings are different for the validator and sentry. This assumes yo
 
 Validators Nodes should edit their config.toml:
 ```
-Config Option	    Setting
-pex 	             false
-persistent_peers	 [list of sentry nodes]
-private_peer_ids	 null
-addr_book_strict	 false
+Config Option	     Setting
+pex 	              false
+persistent_peers	  [list of sentry nodes]
+private_peer_ids	  null
+addr_book_strict	  false
 ```
 
 Sentry Nodes should edit their config.toml:
 
 ```
-Config Option	     Setting
-pex	               true
+Config Option	      Setting
+pex	                true
 # Example ID: 3e16af0cead27979e1fc3dac57d03df3c7a77acc@3.87.179.235:26656
-persistent_peers	  [validator node, optionally other sentry nodes]
+persistent_peers	   [validator node, optionally other sentry nodes]
 
 # Comma separated list of peer IDs to keep private (will not be gossiped to other peers)
-private_peer_ids	  validator node id
-addr_book_strict	  false
+private_peer_ids	   validator node id
+addr_book_strict	   false
 ```
 
