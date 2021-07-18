@@ -198,21 +198,13 @@ Validators Nodes should edit their config.toml:
 
 Sentry Nodes should edit their config.toml:
 
-
 | Config Option  | Setting |
 | ------------- | ------------- |
 | pex  | true |
 | persistent_peers |  validator node, optionally other sentry nodes |
 | private_peer_ids	|  validator node id |
 | addr_book_strict |  false |
-```
-Config Option	      Setting
-pex	                true
-# Example ID: 3e16af0cead27979e1fc3dac57d03df3c7a77acc@3.87.179.235:26656
-persistent_peers	   [validator node, optionally other sentry nodes]
 
-# Comma separated list of peer IDs to keep private (will not be gossiped to other peers)
-private_peer_ids	   validator node id
-addr_book_strict	   false
-```
+
+### Configure Yubikey 
 
