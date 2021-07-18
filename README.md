@@ -195,7 +195,10 @@ persistent_peers	  [list of sentry nodes]
 private_peer_ids	  null
 addr_book_strict	  false
 ```
-
+| Config Option  | Setting |
+| ------------- | ------------- |
+| Pex  | False  |
+| Content Cell  | Content Cell  |
 Sentry Nodes should edit their config.toml:
 
 ```
