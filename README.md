@@ -188,19 +188,23 @@ https://forum.cosmos.network/t/sentry-node-architecture-overview/454
 Config.toml settings are different for the validator and sentry. This assumes you have configured the firwall and VPN settings and nodes are connected.
 
 Validators Nodes should edit their config.toml:
-```
-Config Option	     Setting
-pex 	              false
-persistent_peers	  [list of sentry nodes]
-private_peer_ids	  null
-addr_book_strict	  false
-```
+
 | Config Option  | Setting |
 | ------------- | ------------- |
-| Pex  | False  |
-| Content Cell  | Content Cell  |
+| pex  | false  |
+| persistent_peers |  list of sentry nodes |
+| private_peer_ids	|  null |
+| addr_book_strict |  false |
+
 Sentry Nodes should edit their config.toml:
 
+
+| Config Option  | Setting |
+| ------------- | ------------- |
+| pex  | true |
+| persistent_peers |  validator node, optionally other sentry nodes |
+| private_peer_ids	|  validator node id |
+| addr_book_strict |  false |
 ```
 Config Option	      Setting
 pex	                true
