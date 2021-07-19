@@ -208,3 +208,37 @@ Sentry Nodes should edit their config.toml:
 
 ### Configure Yubikey 
 
+### Migrate Keys & Yoda
+
+Export the keyfile
+```
+bandcli keys export $WALLET_NAME
+```
+After entering your passsword a private key will be displayed on terminal, similar to the example below.
+```
+# 
+# -----BEGIN TENDERMINT PRIVATE KEY-----
+
+# ...
+# -----END TENDERMINT PRIVATE KEY-----
+# 
+```
+Copy the result to a file 
+```
+vim $HOME/${WALLET_NAME}_privkey.txt
+```
+On the new server install this key
+```
+bandd keys import $WALLET_NAME $HOME/${WALLET_NAME}_privkey.txt
+
+# Please make sure that the key has been imported successfully
+bandd keys list
+
+# If key has been import successfully, then delete the file
+rm $HOME/${WALLET_NAME}_privkey.txt
+```
+The keyring folder of Yoda should be backed up
+```
+# PLEASE MAKE SURE THAT NO TRALING SLASH IN BOTH PATHS
+$HOME/.yoda/keyring-test
+```
