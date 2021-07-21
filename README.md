@@ -14,7 +14,7 @@ Pompey Finance <hello@pompey.finance>
 This is my general cheatsheet for setup of an instance on Tendermint Blockchains. We are migrating to Red Hat but most of these steps are for Ubuntu and some are universal. If you know any commands we missed please reach out on Discord. 
 
 <br /><br />
-### Generate private/public ssh keys and push to validator/node
+### Generate private/public ssh keys and push to validator/sentry node
 
 From your local Machine
 Generate private & public keys (public key has ".pub" extension)
