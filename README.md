@@ -114,6 +114,9 @@ Now Linux is setup we can move on to install ing GO, BAND and YODA using the lat
 Old Laozi-Testnet-1 
 https://hackmd.io/@ntchjb/H1MWbZKOu
 
+Old Guanyu-Mainnet
+https://medium.com/bandprotocol/bandchain-phase-1-successful-mainnet-upgrade-and-guanyu-launch-ac2d0334da77
+
 Current Laozi-Testnet-2
 https://hackmd.io/xrOA-9FSRM6kxCMX9uyv9g# 
 
