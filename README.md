@@ -117,7 +117,7 @@ https://hackmd.io/@ntchjb/H1MWbZKOu
 Current Laozi-Testnet-2
 https://hackmd.io/xrOA-9FSRM6kxCMX9uyv9g# 
 
-Guanyu-Mainnet Test 1
+Laozi-Mainnet Test 1
 https://github.com/bandprotocol/chain/wiki/Migration-of-GuanYu-Mainnet-to-Laozi-Mainnet
 
 Prometheus Yoda 
