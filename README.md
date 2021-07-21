@@ -111,8 +111,14 @@ Install the Node Exporter on each node as per the Centos guide above.
 ### Band Protocol Specific Stuff
 Now Linux is setup we can move on to install ing GO, BAND and YODA using the latest guides.
 
+Old Laozi-Testnet-1 
+https://hackmd.io/@ntchjb/H1MWbZKOu
+
 Current Laozi-Testnet-2
 https://hackmd.io/xrOA-9FSRM6kxCMX9uyv9g# 
+
+Guanyu-Mainnet Test 1
+https://github.com/bandprotocol/chain/wiki/Migration-of-GuanYu-Mainnet-to-Laozi-Mainnet
 
 Prometheus Yoda 
 https://www.forbole.com/blog/prometheus-exporter-for-bandchain
