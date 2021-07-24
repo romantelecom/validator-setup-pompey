@@ -16,7 +16,7 @@
 |__|     |__| |__| \__| /__/     \__\ |__| \__|  \______||_______|
 
                                                      
-Pompey Finance <hello@pompey.finance>
+Contact Pompey Finance <hello@pompey.finance>
 ```
 ## Resources
 
