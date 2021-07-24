@@ -9,11 +9,18 @@
                      |_|         |___/                                      
 Pompey Finance <hello@pompey.finance>
 ```
+## Resources
+
+Old Guanyu-Mainnet
+https://medium.com/bandprotocol/bandchain-phase-1-successful-mainnet-upgrade-and-guanyu-launch-ac2d0334da77
+
+Current Laozi-Testnet-2
+https://hackmd.io/xrOA-9FSRM6kxCMX9uyv9g# 
 
 ## Validator Setup Steps - Tendermint
 This is my general cheatsheet for setup of an instance on Tendermint Blockchains. We are migrating to Red Hat but most of these steps are for Ubuntu and some are universal. If you know any commands we missed please reach out on Discord. 
 
-<br /><br />
+<br />
 ### Generate private/public ssh keys and push to validator/sentry node
 
 From your local Machine
@@ -35,9 +42,9 @@ Login with ssh
 ```
 ssh -i ~/.ssh/<YOUR SSH PRIVATE KEY> username@remote_host
 ```
-If using Rocky Linux probably need to setup additional not root user here:
+If using Rocky Linux probably need to setup additional not-root user as SELinux does not like running programs in user folder:
 https://www.digitalocean.com/community/tutorials/how-to-create-a-new-sudo-enabled-user-on-centos-8-quickstart
-<br /><br />
+<br />
 
 
 ### Update the validator/node
@@ -129,9 +136,11 @@ https://www.forbole.com/blog/prometheus-exporter-for-bandchain
 Outdated - Laozi-Testnet-1
 https://hackmd.io/@ntchjb/H1MWbZKOu
 
-<br /><br />
+<br />
 
 ### Band Protocol / Tendermint Useful Commands
+
+Remember to use ```bandcli``` on guanyu and ```bandd``` on Laozi. And double check anything you do tat involves keys twice so you do not accidentally delete. 
 
 Add Your Identity (Add your address here $BAND)
 ```
@@ -147,6 +156,10 @@ bandd tendermint show-address
 bandd tendermint show-validator
 bandd tendermint show-node-id
 ```
+Delegate 50 band from wallet to your validator
+```
+bandcli tx staking delegate bandvaloper<YOUR_ACCOUNT> 50000000uband --from band<YOUR_WALLET> --chain-id band-guanyu-mainnet
+```
 Unjail yourself (Add your address here $BAND)
 ```
 bandd tx slashing unjail --from $BAND --chain-id laozi-testnet2
@@ -154,7 +167,7 @@ bandd query staking validator $BAND --chain-id laozi-testnet2
 ```
 Recover From Seed Phrase - First Remove your existing #CAREFUL!!
 ```
-bandd keys delete $WALLET_NAME
+bandd keys delete $WALLET_NAME  #see warning above
 bandd keys add $WALLET_NAME --recover
 
 ```
