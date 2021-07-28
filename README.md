@@ -20,11 +20,16 @@ Contact Pompey Finance <hello@pompey.finance>
 ```
 ## Resources
 
+
+Core Tendermint Command Reference And Wallet Structure
+https://docs.cosmos.network/v0.43/run-node/keyring.html#adding-keys-to-the-keyring
+
 Old Guanyu-Mainnet
 https://medium.com/bandprotocol/bandchain-phase-1-successful-mainnet-upgrade-and-guanyu-launch-ac2d0334da77
 
 Current Laozi-Testnet-2
 https://hackmd.io/xrOA-9FSRM6kxCMX9uyv9g# 
+
 
 ## Validator Setup Steps - Tendermint
 This is my general cheatsheet for setup of an instance on Tendermint Blockchains. We are migrating to Red Hat but most of these steps are for Ubuntu and some are universal. If you know any commands we missed please reach out on Discord. 
