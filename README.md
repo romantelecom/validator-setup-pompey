@@ -287,3 +287,9 @@ Adrian is right, I'm relying on unsafe_reset_all not removing the genesis file. 
 As an afterthought it also creates a default config.toml that hooks onto all IP addresses on the default ports and can be overwritten on the command-line. As an example this is fine but for a network, the seeds part will be definitely overwritten and usually the IP addresses will be corrected too on the command-line or in the file. It is only valuable as-is if it is used as an example.
 ```tendermint gen_validator``` will only generate the priv_validator.json content and print it to the screen. Together with tendermint show_validator it can be used to imitate the ```init``` command.
 3. ```tendermint unsafe_reset_all``` will not touch the genesis.json or the config.toml file. It will remove the data folder and reset all counters in the priv_validator.json. It is considered unsafe because it destroys the database but it does not destroy the configuration. ```unsafe_reset_priv_validator``` will not remove the data folder, only reset counters. (I'm not sure in what scenario this is useful.)
+
+### GCP / AWS Stuff
+
+## Resize drive
+sudo growpart /dev/nvme0n1 1
+sudo resize2fs /dev/nvme0n1p1
