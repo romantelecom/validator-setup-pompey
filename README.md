@@ -291,5 +291,15 @@ As an afterthought it also creates a default config.toml that hooks onto all IP 
 ### GCP / AWS Stuff
 
 ## Resize drive
+```
 sudo growpart /dev/nvme0n1 1
 sudo resize2fs /dev/nvme0n1p1
+```
+
+## Bastion Hosts
+```
+# Shell 1 Bastion Key
+ssh -i "~/keys/aws-key.pem" user@public-ip-of-bastion -L 9999:ip-of-the-target:22
+# Shell 2 Target Key
+ssh -i "~/keys/target-key.pem" user@localhost -p 9999
+```
