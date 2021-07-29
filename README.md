@@ -296,7 +296,7 @@ sudo growpart /dev/nvme0n1 1
 sudo resize2fs /dev/nvme0n1p1
 ```
 
-## Bastion Hosts
+## Bastion Hosts 
 ```
 # Shell 1 Bastion Key
 ssh -i "~/keys/aws-key.pem" user@public-ip-of-bastion -L 9999:ip-of-the-target:22
