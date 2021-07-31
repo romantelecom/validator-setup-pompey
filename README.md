@@ -18,7 +18,7 @@
                                                      
 Contact Pompey Finance <hello@pompey.finance>
 ```
-## Resources
+## Resources for employees and administrators
 
 
 Core Tendermint Command Reference And Wallet Structure
@@ -288,7 +288,7 @@ As an afterthought it also creates a default config.toml that hooks onto all IP 
 ```tendermint gen_validator``` will only generate the priv_validator.json content and print it to the screen. Together with tendermint show_validator it can be used to imitate the ```init``` command.
 3. ```tendermint unsafe_reset_all``` will not touch the genesis.json or the config.toml file. It will remove the data folder and reset all counters in the priv_validator.json. It is considered unsafe because it destroys the database but it does not destroy the configuration. ```unsafe_reset_priv_validator``` will not remove the data folder, only reset counters. (I'm not sure in what scenario this is useful.)
 
-### GCP / AWS Stuff
+### General GCP / AWS Type Stuff
 
 ## Resize drive
 ```
@@ -302,4 +302,12 @@ sudo resize2fs /dev/nvme0n1p1
 ssh -i "~/keys/aws-key.pem" user@public-ip-of-bastion -L 9999:ip-of-the-target:22
 # Shell 2 Target Key
 ssh -i "~/keys/target-key.pem" user@localhost -p 9999
+```
+## Copy file up to a node
+```
+scp file.tar.xz remote_username@10.10.0.2:/remote/directory
+```
+Untar it
+```
+tar -xf file.tar.xf
 ```
