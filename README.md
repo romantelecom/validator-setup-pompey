@@ -307,7 +307,9 @@ ssh -i "~/keys/target-key.pem" user@localhost -p 9999
 ```
 scp file.tar.xz remote_username@10.10.0.2:/remote/directory
 ```
-Untar it
+Tar files
 ```
-tar -xf file.tar.xf
+tar -cf archive.tar foo bar
+tar -tf foo.tar.xf
+tar -xvf foo.tar.xf
 ```
