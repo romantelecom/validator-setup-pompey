@@ -32,7 +32,7 @@ https://hackmd.io/xrOA-9FSRM6kxCMX9uyv9g#
 
 
 ## Validator Setup Steps - Tendermint
-This is my general cheatsheet for setup of an instance on Tendermint Blockchains. We are migrating to Red Hat but most of these steps are for Ubuntu and some are universal. If you know any commands we missed please reach out on Discord. 
+This is my general cheatsheet for setup of an instance on Tendermint Blockchains. We are migrating to Red Hat but most of these steps are for Ubuntu and some are universal. We are active on Discord please reach out for questions. 
 
 <br />
 ### Generate private/public ssh keys and push to validator/sentry node
