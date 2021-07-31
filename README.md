@@ -313,3 +313,40 @@ tar -cf archive.tar foo bar
 tar -tf foo.tar.xf
 tar -xvf foo.tar.xf
 ```
+## Migration Guanyu to New Server
+
+# Ssnapshot
+
+```
+tar czvf /data/snapshot.tar.gz $HOME/.bandd/data/ $HOME/.bandd/files/
+```
+# or rsync
+```
+sudo rsync -av --delete --dry-run $HOME/.bandd/data/ /data/.bandd/data
+sudo rsync -av --delete --dry-run $HOME/.bandd/files/ /data/.bandd/files
+sudo rsync -av --delete $HOME/.bandd/data/ /data/.bandd/data
+sudo rsync -av --delete $HOME/.bandd/files/ /data/.bandd/files
+```
+##  After sync
+
+# Target and prrmary systems
+sudo systemctl diable bandd
+sudo systemctl stop band
+
+check it worked
+journalctl -f -u bandd.service 
+
+# Key data import
+/home/username/go/bin/bandcli  keys import key.txt
+
+cp priv_validator_key.json $HOME/.bandd/config
+cp node_key.json $HOME/.band/config
+
+/home/username/go/bin/bandcli keys list keys import #WALLET_NAME $HOME/key.txt
+
+# Check it worked
+/home/username/go/bin/bandcli keys list
+
+# Yoda
+cd .yoda
+tar -xvf yoda.tar.xf
