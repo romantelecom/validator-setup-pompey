@@ -292,8 +292,11 @@ As an afterthought it also creates a default config.toml that hooks onto all IP 
 
 ## Resize drive
 ```
+lsblk or df -hT
+sudo file -s /dev/nvme01
 sudo growpart /dev/nvme0n1 1
 sudo resize2fs /dev/nvme0n1p1
+df -h
 ```
 
 ## Bastion Hosts 
