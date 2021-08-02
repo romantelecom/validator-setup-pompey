@@ -353,5 +353,7 @@ cp node_key.json $HOME/.band/config
 ```
 cd .yoda
 tar -xvf yoda.tar.xf
+#if lz4's
+lz4 -d "$PATH" | tar xvf -
 ```
 
