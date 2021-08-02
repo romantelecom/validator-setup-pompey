@@ -307,12 +307,7 @@ ssh -i "~/keys/target-key.pem" user@localhost -p 9999
 ```
 scp file.tar.xz remote_username@10.10.0.2:/remote/directory
 ```
-Tar files
-```
-tar -cf archive.tar foo bar
-tar -tf foo.tar.xf
-tar -xvf foo.tar.xf
-```
+
 ## Migration Guanyu to New Server
 
 ### Snapshot
@@ -356,3 +351,4 @@ cp node_key.json $HOME/.band/config
 cd .yoda
 tar -xvf yoda.tar.xf
 ```
+
