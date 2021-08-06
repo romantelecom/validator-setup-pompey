@@ -357,3 +357,6 @@ tar -xvf yoda.tar.xf
 lz4 -d "$PATH" | tar xvf -
 ```
 
+### Fix the motd
+sudo chmod -x /etc/update-motd.d/*
+
