@@ -6,7 +6,7 @@
 / /__   / __/ / / / __/ / / / __// _ `/ / /  	Critical Staking
 \___/  /_/   /_/  \__/ /_/  \__/ \_,_/ /_/   	You are being logged
                  
-Contact Pompey Finance <hello@criticalstaking.com>
+Contact Critical Staking <hello@criticalstaking.com>
 ```
 ## Resources for employees and administrators
 
