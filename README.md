@@ -14,12 +14,8 @@ Contact Critical Staking <hello@criticalstaking.com>
 Core Tendermint Command Reference And Wallet Structure
 https://docs.cosmos.network/v0.43/run-node/keyring.html#adding-keys-to-the-keyring
 
-Old Guanyu-Mainnet
-https://medium.com/bandprotocol/bandchain-phase-1-successful-mainnet-upgrade-and-guanyu-launch-ac2d0334da77
-
-Current Laozi-Testnet-2
-https://hackmd.io/xrOA-9FSRM6kxCMX9uyv9g# 
-
+Laozi-Mainnet Setup Doc
+https://github.com/bandprotocol/chain/wiki/BandChain-Laozi-Mainnet:-How-to-Join-as-a-Validator
 
 ## Validator Setup Steps - Tendermint
 This is my general cheatsheet for setup of an instance on Tendermint Blockchains. We are migrating to Red Hat but most of these steps are for Ubuntu and some are universal. We are active on Discord please reach out for questions. 
@@ -122,23 +118,12 @@ Install the Node Exporter on each node as per the Centos guide above.
 ### Band Protocol Specific Stuff
 Now Linux is setup we can move on to install ing GO, BAND and YODA using the latest guides.
 
-Old Laozi-Testnet-1 
-https://hackmd.io/@ntchjb/H1MWbZKOu
-
-Old Guanyu-Mainnet
-https://medium.com/bandprotocol/bandchain-phase-1-successful-mainnet-upgrade-and-guanyu-launch-ac2d0334da77
-
-Current Laozi-Testnet-2
-https://hackmd.io/xrOA-9FSRM6kxCMX9uyv9g# 
-
-Laozi-Mainnet Migration 1
-https://github.com/bandprotocol/chain/wiki/Migration-of-GuanYu-Mainnet-to-Laozi-Mainnet
+Laozi-Mainnet
+https://github.com/bandprotocol/chain/wiki/BandChain-Laozi-Mainnet:-How-to-Join-as-a-Validator
 
 Prometheus Yoda 
 https://www.forbole.com/blog/prometheus-exporter-for-bandchain
 
-Outdated - Laozi-Testnet-1
-https://hackmd.io/@ntchjb/H1MWbZKOu
 
 <br />
 
