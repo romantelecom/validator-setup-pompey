@@ -190,6 +190,13 @@ bandd tx oracle activate \
   --chain-id $CHAIN_ID
 ```
 
+Check yoda is active:
+```
+bandd query oracle validator OPERATOR_ADDRESS --node http://127.0.0.1:26657
+bandd query oracle params --node http://127.0.0.1:26657
+yoda version
+bandd query oracle counts --node http://127.0.0.1:26657
+```
 
 ### Sentry Node Architecture Settings
 Please read more about senry node architecture here: 
