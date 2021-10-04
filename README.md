@@ -139,6 +139,10 @@ Add Your Website (Add your address here $BAND)
 ```
 bandd tx staking edit-validator --website http://pompey.finance --from $BAND --chain-id band-laozi-testnet2
 ```
+Check how many nodes you are connected to.
+```
+curl -sS http://localhost:26657/net_info | jq -r '.result.n_peers'
+```
 Get Node Details (Useful because NODE-ID is used for presisitance peers) 
 ```
 bandd tendermint show-address 
