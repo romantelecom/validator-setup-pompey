@@ -153,6 +153,10 @@ Delegate 50 band from wallet to your validator
 ```
 bandcli tx staking delegate bandvaloper<YOUR_ACCOUNT> 50000000uband --from band<YOUR_WALLET> --chain-id band-guanyu-mainnet
 ```
+Withdraw staking rewards validator 
+```
+bandd tx distribution withdraw-rewards $vali_address  --from $vali_wallet --chain-id laozi-mainnet
+```
 Unjail yourself (Add your address here $BAND)
 ```
 bandd tx slashing unjail --from $BAND --chain-id laozi-testnet2
