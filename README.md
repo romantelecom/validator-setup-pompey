@@ -264,6 +264,13 @@ The keyring folder of Yoda should be backed up
 # PLEASE MAKE SURE THAT NO TRALING SLASH IN BOTH PATHS
 $HOME/.yoda/keyring-test
 ```
+
+
+### How to setup QEMU server
+Bridged networking:
+https://levelup.gitconnected.com/how-to-setup-bridge-networking-with-kvm-on-ubuntu-20-04-9c560b3e3991
+
+
 ### Old Tendermnt notes for myself from a post by greg-szabo 
 
 Adrian is right, I'm relying on unsafe_reset_all not removing the genesis file. I had a hard time understanding the logic and the relations among genesis.json/config.toml/priv_validator.json. Here are the current pieces I'm aware of:
